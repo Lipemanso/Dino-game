@@ -1,0 +1,46 @@
+body {
+    background: #fafafa;
+  }
+  
+  .dino {
+    position: absolute;
+    bottom: 0;
+    background-image: url(samus.gif);
+    width: 180px;
+    height: 180px;
+  }
+  
+  .cactus {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 0;
+    background-image: url(alien.png);
+  }
+  
+  .game-over {
+    text-align: center;
+    color: #666;
+    margin: 50px 0;
+    font-family: arial;
+  }
+  
+  @keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  .background {
+    position: absolute;
+    bottom: 0px;
+    background-image: url('cenario.jpg');
+    background-repeat: repeat-x;
+    animation: slideright 400s infinite linear;
+    -webkit-animation: slideright 400s infinite linear;
+    width: 100%;
+    height: 100%;
+  }
